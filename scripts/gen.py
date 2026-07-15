@@ -646,8 +646,8 @@ def header_html():
 </header>
 <nav class="drawer" id="drawer" aria-label="モバイルナビゲーション">
   <div class="drawer__group">
-    <button class="drawer__summary">製品</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-products">製品</button>
+    <div class="drawer__panel" id="drawer-products"><div class="drawer__panel-inner">
       <p class="drawer__sub">スマートフォン</p>
       <a href="/products/phone/suzaku-4/">SUZAKU 4</a>
       <a href="/products/phone/neo-3/">SUZAKU Neo 3</a>
@@ -665,8 +665,8 @@ def header_html():
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">テクノロジー</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-tech">テクノロジー</button>
+    <div class="drawer__panel" id="drawer-tech"><div class="drawer__panel-inner">
       <a href="/tech/">テクノロジー トップ</a>
       <a href="/tech/cpu/">雷 RAI(CPU)</a>
       <a href="/tech/gpu/">焔 HOMURA(GPU)</a>
@@ -679,8 +679,8 @@ def header_html():
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">SUZAKU OS</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-os">SUZAKU OS</button>
+    <div class="drawer__panel" id="drawer-os"><div class="drawer__panel-inner">
       <a href="/os/">SUZAKU OS トップ</a>
       <a href="/os/v4/">SUZAKU OS 4.0「不知火」</a>
       <a href="/os/game-space/">ゲームスペース「陣」</a>
@@ -689,16 +689,16 @@ def header_html():
   <a class="drawer__direct" href="/store/">ストア</a>
   <a class="drawer__direct" href="/support/">サポート</a>
   <div class="drawer__group">
-    <button class="drawer__summary">コミュニティ</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-community">コミュニティ</button>
+    <div class="drawer__panel" id="drawer-community"><div class="drawer__panel-inner">
       <a href="/community/">コミュニティ トップ</a>
       <a href="/community/esports/">eスポーツ・大会</a>
       <a href="/community/ambassador/">アンバサダープログラム</a>
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">企業情報</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-company">企業情報</button>
+    <div class="drawer__panel" id="drawer-company"><div class="drawer__panel-inner">
       <a href="/company/">会社概要</a>
       <a href="/company/history/">沿革</a>
       <a href="/news/">ニュースルーム</a>

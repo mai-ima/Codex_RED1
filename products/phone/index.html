@@ -15,10 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"></noscript>
-<link rel="stylesheet" href="/assets/css/tokens.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/base.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/components.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/animations.css?v=eaf9997df1">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/base.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/components.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/animations.css?v=eb7c4182da">
 
 </head>
 <body class="page-products-phone">
@@ -180,8 +180,8 @@
 </header>
 <nav class="drawer" id="drawer" aria-label="モバイルナビゲーション">
   <div class="drawer__group">
-    <button class="drawer__summary">製品</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-products">製品</button>
+    <div class="drawer__panel" id="drawer-products"><div class="drawer__panel-inner">
       <p class="drawer__sub">スマートフォン</p>
       <a href="/products/phone/suzaku-4/">SUZAKU 4</a>
       <a href="/products/phone/neo-3/">SUZAKU Neo 3</a>
@@ -199,8 +199,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">テクノロジー</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-tech">テクノロジー</button>
+    <div class="drawer__panel" id="drawer-tech"><div class="drawer__panel-inner">
       <a href="/tech/">テクノロジー トップ</a>
       <a href="/tech/cpu/">雷 RAI(CPU)</a>
       <a href="/tech/gpu/">焔 HOMURA(GPU)</a>
@@ -213,8 +213,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">SUZAKU OS</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-os">SUZAKU OS</button>
+    <div class="drawer__panel" id="drawer-os"><div class="drawer__panel-inner">
       <a href="/os/">SUZAKU OS トップ</a>
       <a href="/os/v4/">SUZAKU OS 4.0「不知火」</a>
       <a href="/os/game-space/">ゲームスペース「陣」</a>
@@ -223,16 +223,16 @@
   <a class="drawer__direct" href="/store/">ストア</a>
   <a class="drawer__direct" href="/support/">サポート</a>
   <div class="drawer__group">
-    <button class="drawer__summary">コミュニティ</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-community">コミュニティ</button>
+    <div class="drawer__panel" id="drawer-community"><div class="drawer__panel-inner">
       <a href="/community/">コミュニティ トップ</a>
       <a href="/community/esports/">eスポーツ・大会</a>
       <a href="/community/ambassador/">アンバサダープログラム</a>
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">企業情報</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-company">企業情報</button>
+    <div class="drawer__panel" id="drawer-company"><div class="drawer__panel-inner">
       <a href="/company/">会社概要</a>
       <a href="/company/history/">沿革</a>
       <a href="/news/">ニュースルーム</a>
@@ -278,7 +278,7 @@
     <h2 class="t-h2">コラボレーション モデル</h2>
     <p class="t-soft">人気ゲームタイトルとの数量限定・期間限定コラボレーション。筐体からSoCまで各作品のためだけに新規設計した、完全オリジナルの限定モデル。</p></div>
     <div class="grid grid--4 grid--cards reveal-stagger"><a class="product-card" href="/products/phone/shichiyo/">
-  <div class="product-card__media"><img src="/assets/img/products/shichiyo-0.svg?v=eaf9997df1" alt="SUZAKU × 原神 七耀" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/shichiyo-0.svg?v=eb7c4182da" alt="SUZAKU × 原神 七耀" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">コラボレーションモデル / 2026</p>
     <p class="product-card__name">SUZAKU × 原神 七耀 <span class="badge badge--limited">数量限定</span></p>
@@ -286,7 +286,7 @@
     <p class="product-card__price">¥168,000 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/zankyo/">
-  <div class="product-card__media"><img src="/assets/img/products/zankyo-0.svg?v=eaf9997df1" alt="SUZAKU × 鳴潮 残響" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/zankyo-0.svg?v=eb7c4182da" alt="SUZAKU × 鳴潮 残響" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">コラボレーションモデル / 2026</p>
     <p class="product-card__name">SUZAKU × 鳴潮 残響 <span class="badge badge--limited">数量限定</span></p>
@@ -294,7 +294,7 @@
     <p class="product-card__price">¥172,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/yako/">
-  <div class="product-card__media"><img src="/assets/img/products/yako-0.svg?v=eaf9997df1" alt="SUZAKU × NTE 夜行" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/yako-0.svg?v=eb7c4182da" alt="SUZAKU × NTE 夜行" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">コラボレーションモデル / 2026</p>
     <p class="product-card__name">SUZAKU × NTE 夜行 <span class="badge badge--limited">数量限定</span></p>
@@ -302,7 +302,7 @@
     <p class="product-card__price">¥164,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/zensen/">
-  <div class="product-card__media"><img src="/assets/img/products/zensen-0.svg?v=eaf9997df1" alt="SUZAKU × エンドフィールド 前線" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/zensen-0.svg?v=eb7c4182da" alt="SUZAKU × エンドフィールド 前線" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">コラボレーションモデル / 2026</p>
     <p class="product-card__name">SUZAKU × エンドフィールド 前線 <span class="badge badge--limited">数量限定</span></p>
@@ -319,7 +319,7 @@
     <h2 class="t-h2">SUZAKU シリーズ</h2>
     <p class="t-soft">自社SoC・多層冷却・独自OSのすべてを注ぎ込む、SUZAKUの旗艦ライン。2023年の初代から毎年更新。</p></div>
     <div class="grid grid--4 grid--cards reveal-stagger"><a class="product-card" href="/products/phone/suzaku-4/">
-  <div class="product-card__media"><img src="/assets/img/products/suzaku-4-0.svg?v=eaf9997df1" alt="SUZAKU 4" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/suzaku-4-0.svg?v=eb7c4182da" alt="SUZAKU 4" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングフラッグシップ / 2026</p>
     <p class="product-card__name">SUZAKU 4 <span class="badge badge--new">NEW</span></p>
@@ -327,7 +327,7 @@
     <p class="product-card__price">¥149,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/suzaku-3/">
-  <div class="product-card__media"><img src="/assets/img/products/suzaku-3-0.svg?v=eaf9997df1" alt="SUZAKU 3" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/suzaku-3-0.svg?v=eb7c4182da" alt="SUZAKU 3" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングフラッグシップ / 2025</p>
     <p class="product-card__name">SUZAKU 3 </p>
@@ -335,7 +335,7 @@
     <p class="product-card__price">¥114,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/suzaku-2/">
-  <div class="product-card__media"><img src="/assets/img/products/suzaku-2-0.svg?v=eaf9997df1" alt="SUZAKU 2" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/suzaku-2-0.svg?v=eb7c4182da" alt="SUZAKU 2" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングフラッグシップ / 2024</p>
     <p class="product-card__name">SUZAKU 2 <span class="badge badge--end">販売終了</span></p>
@@ -343,7 +343,7 @@
     <p class="product-card__price t-faint">販売終了モデル</p>
   </div>
 </a><a class="product-card" href="/products/phone/suzaku-one/">
-  <div class="product-card__media"><img src="/assets/img/products/suzaku-one-0.svg?v=eaf9997df1" alt="SUZAKU One" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/suzaku-one-0.svg?v=eb7c4182da" alt="SUZAKU One" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングフラッグシップ / 2023</p>
     <p class="product-card__name">SUZAKU One <span class="badge badge--end">販売終了</span></p>
@@ -360,7 +360,7 @@
     <h2 class="t-h2">SUZAKU Neo シリーズ</h2>
     <p class="t-soft">前年フラッグシップの技術を受け継ぎ、価格を抑えたゲーミングスタンダード。「去年の頂点を、今年の普通に」。</p></div>
     <div class="grid grid--3 grid--cards reveal-stagger"><a class="product-card" href="/products/phone/neo-3/">
-  <div class="product-card__media"><img src="/assets/img/products/neo-3-0.svg?v=eaf9997df1" alt="SUZAKU Neo 3" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/neo-3-0.svg?v=eb7c4182da" alt="SUZAKU Neo 3" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングスタンダード / 2026</p>
     <p class="product-card__name">SUZAKU Neo 3 <span class="badge badge--new">NEW</span></p>
@@ -368,7 +368,7 @@
     <p class="product-card__price">¥79,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/neo-2/">
-  <div class="product-card__media"><img src="/assets/img/products/neo-2-0.svg?v=eaf9997df1" alt="SUZAKU Neo 2" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/neo-2-0.svg?v=eb7c4182da" alt="SUZAKU Neo 2" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングスタンダード / 2025</p>
     <p class="product-card__name">SUZAKU Neo 2 </p>
@@ -376,7 +376,7 @@
     <p class="product-card__price">¥69,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/neo/">
-  <div class="product-card__media"><img src="/assets/img/products/neo-0.svg?v=eaf9997df1" alt="SUZAKU Neo" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/neo-0.svg?v=eb7c4182da" alt="SUZAKU Neo" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">ゲーミングスタンダード / 2024</p>
     <p class="product-card__name">SUZAKU Neo <span class="badge badge--end">販売終了</span></p>
@@ -393,7 +393,7 @@
     <h2 class="t-h2">TSUBAME シリーズ</h2>
     <p class="t-soft">ゲーミングで培った技術を日常へ。軽さ・カメラ・電池持ちを磨いた一般向けライン。</p></div>
     <div class="grid grid--3 grid--cards reveal-stagger"><a class="product-card" href="/products/phone/tsubame-3/">
-  <div class="product-card__media"><img src="/assets/img/products/tsubame-3-0.svg?v=eaf9997df1" alt="TSUBAME 3" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/tsubame-3-0.svg?v=eb7c4182da" alt="TSUBAME 3" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">スタンダード / 2026</p>
     <p class="product-card__name">TSUBAME 3 <span class="badge badge--new">NEW</span></p>
@@ -401,7 +401,7 @@
     <p class="product-card__price">¥69,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/tsubame-2/">
-  <div class="product-card__media"><img src="/assets/img/products/tsubame-2-0.svg?v=eaf9997df1" alt="TSUBAME 2" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/tsubame-2-0.svg?v=eb7c4182da" alt="TSUBAME 2" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">スタンダード / 2025</p>
     <p class="product-card__name">TSUBAME 2 </p>
@@ -409,7 +409,7 @@
     <p class="product-card__price">¥62,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/tsubame/">
-  <div class="product-card__media"><img src="/assets/img/products/tsubame-0.svg?v=eaf9997df1" alt="TSUBAME" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/tsubame-0.svg?v=eb7c4182da" alt="TSUBAME" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">スタンダード / 2024</p>
     <p class="product-card__name">TSUBAME <span class="badge badge--end">販売終了</span></p>
@@ -426,7 +426,7 @@
     <h2 class="t-h2">TSUBAME Lite シリーズ</h2>
     <p class="t-soft">3万円台から、SUZAKU品質。はじめての一台にも2台目にも応えるエントリーライン。</p></div>
     <div class="grid grid--2 grid--cards reveal-stagger"><a class="product-card" href="/products/phone/tsubame-lite-2/">
-  <div class="product-card__media"><img src="/assets/img/products/tsubame-lite-2-0.svg?v=eaf9997df1" alt="TSUBAME Lite 2" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/tsubame-lite-2-0.svg?v=eb7c4182da" alt="TSUBAME Lite 2" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">エントリー / 2026</p>
     <p class="product-card__name">TSUBAME Lite 2 <span class="badge badge--new">NEW</span></p>
@@ -434,7 +434,7 @@
     <p class="product-card__price">¥39,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/phone/tsubame-lite/">
-  <div class="product-card__media"><img src="/assets/img/products/tsubame-lite-0.svg?v=eaf9997df1" alt="TSUBAME Lite" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/tsubame-lite-0.svg?v=eb7c4182da" alt="TSUBAME Lite" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">エントリー / 2025</p>
     <p class="product-card__name">TSUBAME Lite </p>
@@ -602,19 +602,19 @@
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/assets/js/keys.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/fmt.js?v=eaf9997df1" defer></script>
-<script src="/data/products.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/main.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/charts.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/store.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/biz.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/pages.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-core.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-guard.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-account.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-admin.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-status.js?v=eaf9997df1" defer></script>
+<script src="/assets/js/keys.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/fmt.js?v=eb7c4182da" defer></script>
+<script src="/data/products.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/main.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/charts.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/store.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/biz.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/pages.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-core.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-guard.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-account.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-admin.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-status.js?v=eb7c4182da" defer></script>
 
 </body>
 </html>

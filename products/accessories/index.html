@@ -15,10 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"></noscript>
-<link rel="stylesheet" href="/assets/css/tokens.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/base.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/components.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/animations.css?v=eaf9997df1">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/base.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/components.css?v=eb7c4182da">
+<link rel="stylesheet" href="/assets/css/animations.css?v=eb7c4182da">
 
 </head>
 <body class="page-products-accessories">
@@ -180,8 +180,8 @@
 </header>
 <nav class="drawer" id="drawer" aria-label="モバイルナビゲーション">
   <div class="drawer__group">
-    <button class="drawer__summary">製品</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-products">製品</button>
+    <div class="drawer__panel" id="drawer-products"><div class="drawer__panel-inner">
       <p class="drawer__sub">スマートフォン</p>
       <a href="/products/phone/suzaku-4/">SUZAKU 4</a>
       <a href="/products/phone/neo-3/">SUZAKU Neo 3</a>
@@ -199,8 +199,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">テクノロジー</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-tech">テクノロジー</button>
+    <div class="drawer__panel" id="drawer-tech"><div class="drawer__panel-inner">
       <a href="/tech/">テクノロジー トップ</a>
       <a href="/tech/cpu/">雷 RAI(CPU)</a>
       <a href="/tech/gpu/">焔 HOMURA(GPU)</a>
@@ -213,8 +213,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">SUZAKU OS</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-os">SUZAKU OS</button>
+    <div class="drawer__panel" id="drawer-os"><div class="drawer__panel-inner">
       <a href="/os/">SUZAKU OS トップ</a>
       <a href="/os/v4/">SUZAKU OS 4.0「不知火」</a>
       <a href="/os/game-space/">ゲームスペース「陣」</a>
@@ -223,16 +223,16 @@
   <a class="drawer__direct" href="/store/">ストア</a>
   <a class="drawer__direct" href="/support/">サポート</a>
   <div class="drawer__group">
-    <button class="drawer__summary">コミュニティ</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-community">コミュニティ</button>
+    <div class="drawer__panel" id="drawer-community"><div class="drawer__panel-inner">
       <a href="/community/">コミュニティ トップ</a>
       <a href="/community/esports/">eスポーツ・大会</a>
       <a href="/community/ambassador/">アンバサダープログラム</a>
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">企業情報</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-company">企業情報</button>
+    <div class="drawer__panel" id="drawer-company"><div class="drawer__panel-inner">
       <a href="/company/">会社概要</a>
       <a href="/company/history/">沿革</a>
       <a href="/news/">ニュースルーム</a>
@@ -264,7 +264,7 @@
   </div>
 </section>
 <section class="section--sm"><div class="container"><div class="grid grid--3 grid--cards reveal-stagger"><a class="product-card" href="/products/accessories/hyoran-cooler/">
-  <div class="product-card__media"><img src="/assets/img/products/hyoran-cooler-0.svg?v=eaf9997df1" alt="氷嵐クーラー 2" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/hyoran-cooler-0.svg?v=eb7c4182da" alt="氷嵐クーラー 2" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2025</p>
     <p class="product-card__name">氷嵐クーラー 2 <span class="badge badge--new">NEW</span></p>
@@ -272,7 +272,7 @@
     <p class="product-card__price">¥6,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/grip-pro/">
-  <div class="product-card__media"><img src="/assets/img/products/grip-pro-0.svg?v=eaf9997df1" alt="SUZAKU Grip Pro" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/grip-pro-0.svg?v=eb7c4182da" alt="SUZAKU Grip Pro" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2024</p>
     <p class="product-card__name">SUZAKU Grip Pro </p>
@@ -280,7 +280,7 @@
     <p class="product-card__price">¥8,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/buds/">
-  <div class="product-card__media"><img src="/assets/img/products/buds-0.svg?v=eaf9997df1" alt="SUZAKU Buds" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/buds-0.svg?v=eb7c4182da" alt="SUZAKU Buds" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2023</p>
     <p class="product-card__name">SUZAKU Buds </p>
@@ -288,7 +288,7 @@
     <p class="product-card__price">¥14,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/raisoku-charger/">
-  <div class="product-card__media"><img src="/assets/img/products/raisoku-charger-0.svg?v=eaf9997df1" alt="雷速チャージャー 120W" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/raisoku-charger-0.svg?v=eb7c4182da" alt="雷速チャージャー 120W" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2024</p>
     <p class="product-card__name">雷速チャージャー 120W </p>
@@ -296,7 +296,7 @@
     <p class="product-card__price">¥7,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/shield-case/">
-  <div class="product-card__media"><img src="/assets/img/products/shield-case-0.svg?v=eaf9997df1" alt="SUZAKU Shield ケース" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/shield-case-0.svg?v=eb7c4182da" alt="SUZAKU Shield ケース" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">SUZAKU Shield ケース </p>
@@ -304,7 +304,7 @@
     <p class="product-card__price">¥3,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/dock/">
-  <div class="product-card__media"><img src="/assets/img/products/dock-0.svg?v=eaf9997df1" alt="SUZAKU Dock" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/dock-0.svg?v=eb7c4182da" alt="SUZAKU Dock" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2025</p>
     <p class="product-card__name">SUZAKU Dock </p>
@@ -312,7 +312,7 @@
     <p class="product-card__price">¥12,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/pb-genshin/">
-  <div class="product-card__media"><img src="/assets/img/products/pb-genshin-0.svg?v=eaf9997df1" alt="原神コラボ・モバイルバッテリー 神像デザイン" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/pb-genshin-0.svg?v=eb7c4182da" alt="原神コラボ・モバイルバッテリー 神像デザイン" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">原神コラボ・モバイルバッテリー 神像デザイン <span class="badge badge--limited">数量限定</span></p>
@@ -320,7 +320,7 @@
     <p class="product-card__price">¥8,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/pb-wuwa/">
-  <div class="product-card__media"><img src="/assets/img/products/pb-wuwa-0.svg?v=eaf9997df1" alt="鳴潮コラボ・モバイルバッテリー 共鳴デザイン" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/pb-wuwa-0.svg?v=eb7c4182da" alt="鳴潮コラボ・モバイルバッテリー 共鳴デザイン" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">鳴潮コラボ・モバイルバッテリー 共鳴デザイン <span class="badge badge--limited">数量限定</span></p>
@@ -328,7 +328,7 @@
     <p class="product-card__price">¥8,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/pb-nte/">
-  <div class="product-card__media"><img src="/assets/img/products/pb-nte-0.svg?v=eaf9997df1" alt="NTEコラボ・モバイルバッテリー ネオンデザイン" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/pb-nte-0.svg?v=eb7c4182da" alt="NTEコラボ・モバイルバッテリー ネオンデザイン" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">NTEコラボ・モバイルバッテリー ネオンデザイン <span class="badge badge--limited">数量限定</span></p>
@@ -336,7 +336,7 @@
     <p class="product-card__price">¥8,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/pb-endfield/">
-  <div class="product-card__media"><img src="/assets/img/products/pb-endfield-0.svg?v=eaf9997df1" alt="エンドフィールドコラボ・モバイルバッテリー ターミナルデザイン" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/pb-endfield-0.svg?v=eb7c4182da" alt="エンドフィールドコラボ・モバイルバッテリー ターミナルデザイン" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">エンドフィールドコラボ・モバイルバッテリー ターミナルデザイン <span class="badge badge--limited">数量限定</span></p>
@@ -344,7 +344,7 @@
     <p class="product-card__price">¥8,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/cs-genshin/">
-  <div class="product-card__media"><img src="/assets/img/products/cs-genshin-0.svg?v=eaf9997df1" alt="七耀 白磁ケース" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/cs-genshin-0.svg?v=eb7c4182da" alt="七耀 白磁ケース" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">七耀 白磁ケース <span class="badge badge--limited">数量限定</span></p>
@@ -352,7 +352,7 @@
     <p class="product-card__price">¥7,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/cs-wuwa/">
-  <div class="product-card__media"><img src="/assets/img/products/cs-wuwa-0.svg?v=eaf9997df1" alt="残響 モノリスケース" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/cs-wuwa-0.svg?v=eb7c4182da" alt="残響 モノリスケース" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">残響 モノリスケース <span class="badge badge--limited">数量限定</span></p>
@@ -360,7 +360,7 @@
     <p class="product-card__price">¥7,480 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/cs-nte/">
-  <div class="product-card__media"><img src="/assets/img/products/cs-nte-0.svg?v=eaf9997df1" alt="夜行 クリアELケース" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/cs-nte-0.svg?v=eb7c4182da" alt="夜行 クリアELケース" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">夜行 クリアELケース <span class="badge badge--limited">数量限定</span></p>
@@ -368,7 +368,7 @@
     <p class="product-card__price">¥8,480 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/cs-endfield/">
-  <div class="product-card__media"><img src="/assets/img/products/cs-endfield-0.svg?v=eaf9997df1" alt="前線 アーマーケース" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/cs-endfield-0.svg?v=eb7c4182da" alt="前線 アーマーケース" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">前線 アーマーケース <span class="badge badge--limited">数量限定</span></p>
@@ -376,7 +376,7 @@
     <p class="product-card__price">¥6,980 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/bd-genshin/">
-  <div class="product-card__media"><img src="/assets/img/products/bd-genshin-0.svg?v=eaf9997df1" alt="七耀 イヤホン「元素の音」" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/bd-genshin-0.svg?v=eb7c4182da" alt="七耀 イヤホン「元素の音」" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">七耀 イヤホン「元素の音」 <span class="badge badge--limited">数量限定</span></p>
@@ -384,7 +384,7 @@
     <p class="product-card__price">¥22,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/bd-wuwa/">
-  <div class="product-card__media"><img src="/assets/img/products/bd-wuwa-0.svg?v=eaf9997df1" alt="残響 イヤホン「共鳴音場」" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/bd-wuwa-0.svg?v=eb7c4182da" alt="残響 イヤホン「共鳴音場」" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">残響 イヤホン「共鳴音場」 <span class="badge badge--limited">数量限定</span></p>
@@ -392,7 +392,7 @@
     <p class="product-card__price">¥24,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/bd-nte/">
-  <div class="product-card__media"><img src="/assets/img/products/bd-nte-0.svg?v=eaf9997df1" alt="夜行 イヤホン「ELグロウ」" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/bd-nte-0.svg?v=eb7c4182da" alt="夜行 イヤホン「ELグロウ」" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">夜行 イヤホン「ELグロウ」 <span class="badge badge--limited">数量限定</span></p>
@@ -400,7 +400,7 @@
     <p class="product-card__price">¥21,800 <small>(税込)〜</small></p>
   </div>
 </a><a class="product-card" href="/products/accessories/bd-endfield/">
-  <div class="product-card__media"><img src="/assets/img/products/bd-endfield-0.svg?v=eaf9997df1" alt="前線 イヤホン「フィールドバッズ」" loading="lazy" width="360" height="640"></div>
+  <div class="product-card__media"><img src="/assets/img/products/bd-endfield-0.svg?v=eb7c4182da" alt="前線 イヤホン「フィールドバッズ」" loading="lazy" width="360" height="640"></div>
   <div class="product-card__body">
     <p class="product-card__tag">純正アクセサリ / 2026</p>
     <p class="product-card__name">前線 イヤホン「フィールドバッズ」 <span class="badge badge--limited">数量限定</span></p>
@@ -471,19 +471,19 @@
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/assets/js/keys.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/fmt.js?v=eaf9997df1" defer></script>
-<script src="/data/products.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/main.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/charts.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/store.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/biz.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/pages.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-core.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-guard.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-account.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-admin.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-status.js?v=eaf9997df1" defer></script>
+<script src="/assets/js/keys.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/fmt.js?v=eb7c4182da" defer></script>
+<script src="/data/products.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/main.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/charts.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/store.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/biz.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/pages.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-core.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-guard.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-account.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-admin.js?v=eb7c4182da" defer></script>
+<script src="/assets/js/auth-status.js?v=eb7c4182da" defer></script>
 
 </body>
 </html>
