@@ -15,10 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"></noscript>
-<link rel="stylesheet" href="/assets/css/tokens.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/base.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/components.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/animations.css?v=eaf9997df1">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/base.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/components.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/animations.css?v=2db9969cab">
 
 </head>
 <body class="page-home">
@@ -180,8 +180,8 @@
 </header>
 <nav class="drawer" id="drawer" aria-label="モバイルナビゲーション">
   <div class="drawer__group">
-    <button class="drawer__summary">製品</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-products">製品</button>
+    <div class="drawer__panel" id="drawer-products"><div class="drawer__panel-inner">
       <p class="drawer__sub">スマートフォン</p>
       <a href="/products/phone/suzaku-4/">SUZAKU 4</a>
       <a href="/products/phone/neo-3/">SUZAKU Neo 3</a>
@@ -199,8 +199,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">テクノロジー</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-tech">テクノロジー</button>
+    <div class="drawer__panel" id="drawer-tech"><div class="drawer__panel-inner">
       <a href="/tech/">テクノロジー トップ</a>
       <a href="/tech/cpu/">雷 RAI(CPU)</a>
       <a href="/tech/gpu/">焔 HOMURA(GPU)</a>
@@ -213,8 +213,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">SUZAKU OS</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-os">SUZAKU OS</button>
+    <div class="drawer__panel" id="drawer-os"><div class="drawer__panel-inner">
       <a href="/os/">SUZAKU OS トップ</a>
       <a href="/os/v4/">SUZAKU OS 4.0「不知火」</a>
       <a href="/os/game-space/">ゲームスペース「陣」</a>
@@ -223,16 +223,16 @@
   <a class="drawer__direct" href="/store/">ストア</a>
   <a class="drawer__direct" href="/support/">サポート</a>
   <div class="drawer__group">
-    <button class="drawer__summary">コミュニティ</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-community">コミュニティ</button>
+    <div class="drawer__panel" id="drawer-community"><div class="drawer__panel-inner">
       <a href="/community/">コミュニティ トップ</a>
       <a href="/community/esports/">eスポーツ・大会</a>
       <a href="/community/ambassador/">アンバサダープログラム</a>
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">企業情報</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-company">企業情報</button>
+    <div class="drawer__panel" id="drawer-company"><div class="drawer__panel-inner">
       <a href="/company/">会社概要</a>
       <a href="/company/history/">沿革</a>
       <a href="/news/">ニュースルーム</a>
@@ -271,13 +271,53 @@
   <div class="hero__scroll-cue" aria-hidden="true"></div>
 </section>
 
+<section class="section--sm section--flush-top">
+  <div class="container">
+    <div class="home-hero-panel reveal-scale" aria-label="SUZAKU 4 の主要な強み">
+      <div class="home-hero-panel__device">
+        <img src="/assets/img/products/suzaku-4-0.svg" alt="SUZAKU 4 漆黒" width="360" height="640">
+      </div>
+      <div class="home-hero-panel__body">
+        <div class="stack" style="gap:10px">
+          <p class="eyebrow">WHY SUZAKU</p>
+          <h2 class="t-h2">買う理由が、3秒で伝わるトップへ。</h2>
+          <p class="t-soft">従来のトップは情報量が豊富な一方、ファーストビュー直後の判断材料が散らばっていました。製品・性能・サポートへの導線をここで集約し、Vercel配信でも軽いSVG中心の見せ場にしています。</p>
+        </div>
+        <div class="home-proof-grid">
+          <div class="home-proof"><strong>3.8GHz</strong><span>雷 RAI-G4 最大クロック</span></div>
+          <div class="home-proof"><strong>175Hz</strong><span>燐光 RINKO 2 表示</span></div>
+          <div class="home-proof"><strong>11層</strong><span>氷刃 V4 冷却構造</span></div>
+        </div>
+        <div class="cluster">
+          <a class="btn btn--primary" href="/products/finder/">3問で選ぶ</a>
+          <a class="btn btn--ghost" href="/products/compare/">全モデル比較</a>
+          <a class="link-arrow" href="/support/">購入後サポート</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section--sm">
   <div class="container">
-    <div class="stat-row reveal-stagger" style="--stat-cols:4">
-      <div class="stat"><p class="stat__value" data-count>3.8<span class="unit">GHz</span></p><p class="stat__label">雷 RAI-G4 最大クロック</p></div>
-      <div class="stat"><p class="stat__value" data-count>175<span class="unit">Hz</span></p><p class="stat__label">燐光 RINKO 2 ディスプレイ</p></div>
-      <div class="stat"><p class="stat__value" data-count>11<span class="unit">層</span></p><p class="stat__label">氷刃 V4 冷却アーキテクチャ</p></div>
-      <div class="stat"><p class="stat__value" data-count>120<span class="unit">TOPS</span></p><p class="stat__label">神楽 AIエンジン</p></div>
+    <div class="section-head section-head--center">
+      <p class="eyebrow eyebrow--center">USER JOURNEY</p>
+      <h2 class="t-h2">迷わせない4つの入口。</h2>
+      <p class="t-soft">トップページの弱点だった「次に何をすれば良いか」を、用途別カードとして明確化しました。</p>
+    </div>
+    <div class="home-path-grid reveal-stagger">
+      <a class="home-path-card" data-step="01" style="--path-glow:rgba(232,68,46,.32)" href="/products/finder/">
+        <p class="eyebrow">FINDER</p><h3>自分に合う一台を選ぶ</h3><p>ゲーム、予算、サイズから最短で候補を提示。</p><span class="link-arrow">製品セレクターへ</span>
+      </a>
+      <a class="home-path-card" data-step="02" style="--path-glow:rgba(0,194,255,.24)" href="/products/compare/">
+        <p class="eyebrow">COMPARE</p><h3>性能を横並びで見る</h3><p>SoC、冷却、電池、価格を表とチャートで比較。</p><span class="link-arrow">比較ツールへ</span>
+      </a>
+      <a class="home-path-card" data-step="03" style="--path-glow:rgba(217,164,65,.28)" href="/store/deals/">
+        <p class="eyebrow">DEALS</p><h3>キャンペーンを確認</h3><p>下取り、アクセサリ同梱、限定コラボをまとめて確認。</p><span class="link-arrow">特集を見る</span>
+      </a>
+      <a class="home-path-card" data-step="04" style="--path-glow:rgba(0,230,138,.22)" href="/support/">
+        <p class="eyebrow">SUPPORT</p><h3>購入後も迷わない</h3><p>修理、保証、FAQ、ダウンロードへワンタップで到達。</p><span class="link-arrow">サポートへ</span>
+      </a>
     </div>
   </div>
 </section>
@@ -663,19 +703,19 @@
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/assets/js/keys.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/fmt.js?v=eaf9997df1" defer></script>
-<script src="/data/products.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/main.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/charts.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/store.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/biz.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/pages.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-core.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-guard.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-account.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-admin.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-status.js?v=eaf9997df1" defer></script>
+<script src="/assets/js/keys.js?v=2db9969cab" defer></script>
+<script src="/assets/js/fmt.js?v=2db9969cab" defer></script>
+<script src="/data/products.js?v=2db9969cab" defer></script>
+<script src="/assets/js/main.js?v=2db9969cab" defer></script>
+<script src="/assets/js/charts.js?v=2db9969cab" defer></script>
+<script src="/assets/js/store.js?v=2db9969cab" defer></script>
+<script src="/assets/js/biz.js?v=2db9969cab" defer></script>
+<script src="/assets/js/pages.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-core.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-guard.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-account.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-admin.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-status.js?v=2db9969cab" defer></script>
 
 </body>
 </html>

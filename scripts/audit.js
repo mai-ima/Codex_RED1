@@ -22,8 +22,20 @@ const fs = require("fs");
 const path = require("path");
 
 function requirePlaywright() {
-  try { return require("playwright"); } catch {}
-  return require("/opt/node22/lib/node_modules/playwright");
+  const candidates = [
+    "playwright",
+    "/opt/node22/lib/node_modules/playwright",
+    "/opt/homebrew/lib/node_modules/playwright",
+    "/usr/local/lib/node_modules/playwright"
+  ];
+  for (const mod of candidates) {
+    try { return require(mod); } catch {}
+  }
+  console.error(
+    "Playwright が見つかりません。全ページ監査を実行するには `npm i -D playwright` " +
+    "または `npm i -g playwright` を実行してから、再度 `node scripts/audit.js` を実行してください。"
+  );
+  process.exit(2);
 }
 
 const ROOT = path.join(__dirname, "..");

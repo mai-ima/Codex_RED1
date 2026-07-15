@@ -155,16 +155,31 @@
   onScroll();
 
   var navToggle = $("#navToggle");
+  function setDrawerOpen(open) {
+    document.body.classList.toggle("drawer-open", open);
+    if (navToggle) navToggle.setAttribute("aria-expanded", String(open));
+  }
   if (navToggle) {
     navToggle.addEventListener("click", function () {
-      var open = document.body.classList.toggle("drawer-open");
-      navToggle.setAttribute("aria-expanded", String(open));
+      setDrawerOpen(!document.body.classList.contains("drawer-open"));
     });
   }
   $$(".drawer__summary").forEach(function (btn) {
+    var group = btn.closest(".drawer__group");
+    function setGroupOpen(open) {
+      group.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", String(open));
+    }
+    setGroupOpen(group.classList.contains("is-open"));
     btn.addEventListener("click", function () {
-      btn.closest(".drawer__group").classList.toggle("is-open");
+      setGroupOpen(!group.classList.contains("is-open"));
     });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && document.body.classList.contains("drawer-open")) setDrawerOpen(false);
+  });
+  $$(".drawer a").forEach(function (a) {
+    a.addEventListener("click", function () { setDrawerOpen(false); });
   });
 
   /* フッターのアコーディオン(スマートフォンのみ挙動、PCではCSSで常時展開)。

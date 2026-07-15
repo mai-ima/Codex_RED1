@@ -15,10 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"></noscript>
-<link rel="stylesheet" href="/assets/css/tokens.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/base.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/components.css?v=eaf9997df1">
-<link rel="stylesheet" href="/assets/css/animations.css?v=eaf9997df1">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/base.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/components.css?v=2db9969cab">
+<link rel="stylesheet" href="/assets/css/animations.css?v=2db9969cab">
 
 </head>
 <body class="page-search">
@@ -180,8 +180,8 @@
 </header>
 <nav class="drawer" id="drawer" aria-label="モバイルナビゲーション">
   <div class="drawer__group">
-    <button class="drawer__summary">製品</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-products">製品</button>
+    <div class="drawer__panel" id="drawer-products"><div class="drawer__panel-inner">
       <p class="drawer__sub">スマートフォン</p>
       <a href="/products/phone/suzaku-4/">SUZAKU 4</a>
       <a href="/products/phone/neo-3/">SUZAKU Neo 3</a>
@@ -199,8 +199,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">テクノロジー</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-tech">テクノロジー</button>
+    <div class="drawer__panel" id="drawer-tech"><div class="drawer__panel-inner">
       <a href="/tech/">テクノロジー トップ</a>
       <a href="/tech/cpu/">雷 RAI(CPU)</a>
       <a href="/tech/gpu/">焔 HOMURA(GPU)</a>
@@ -213,8 +213,8 @@
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">SUZAKU OS</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-os">SUZAKU OS</button>
+    <div class="drawer__panel" id="drawer-os"><div class="drawer__panel-inner">
       <a href="/os/">SUZAKU OS トップ</a>
       <a href="/os/v4/">SUZAKU OS 4.0「不知火」</a>
       <a href="/os/game-space/">ゲームスペース「陣」</a>
@@ -223,16 +223,16 @@
   <a class="drawer__direct" href="/store/">ストア</a>
   <a class="drawer__direct" href="/support/">サポート</a>
   <div class="drawer__group">
-    <button class="drawer__summary">コミュニティ</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-community">コミュニティ</button>
+    <div class="drawer__panel" id="drawer-community"><div class="drawer__panel-inner">
       <a href="/community/">コミュニティ トップ</a>
       <a href="/community/esports/">eスポーツ・大会</a>
       <a href="/community/ambassador/">アンバサダープログラム</a>
     </div></div>
   </div>
   <div class="drawer__group">
-    <button class="drawer__summary">企業情報</button>
-    <div class="drawer__panel"><div class="drawer__panel-inner">
+    <button class="drawer__summary" type="button" aria-expanded="false" aria-controls="drawer-company">企業情報</button>
+    <div class="drawer__panel" id="drawer-company"><div class="drawer__panel-inner">
       <a href="/company/">会社概要</a>
       <a href="/company/history/">沿革</a>
       <a href="/news/">ニュースルーム</a>
@@ -337,19 +337,19 @@
   </div>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/assets/js/keys.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/fmt.js?v=eaf9997df1" defer></script>
-<script src="/data/products.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/main.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/charts.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/store.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/biz.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/pages.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-core.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-guard.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-account.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-admin.js?v=eaf9997df1" defer></script>
-<script src="/assets/js/auth-status.js?v=eaf9997df1" defer></script>
+<script src="/assets/js/keys.js?v=2db9969cab" defer></script>
+<script src="/assets/js/fmt.js?v=2db9969cab" defer></script>
+<script src="/data/products.js?v=2db9969cab" defer></script>
+<script src="/assets/js/main.js?v=2db9969cab" defer></script>
+<script src="/assets/js/charts.js?v=2db9969cab" defer></script>
+<script src="/assets/js/store.js?v=2db9969cab" defer></script>
+<script src="/assets/js/biz.js?v=2db9969cab" defer></script>
+<script src="/assets/js/pages.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-core.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-guard.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-account.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-admin.js?v=2db9969cab" defer></script>
+<script src="/assets/js/auth-status.js?v=2db9969cab" defer></script>
 
 </body>
 </html>
